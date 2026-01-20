@@ -1,0 +1,10 @@
+{% if page.header or page.primary_menu %}
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-6 flex items-center justify-between">
+            <div class="md:flex items-center justify-between py-4">
+                {{ page.header }}
+                {{ page.primary_menu }}
+            </div>
+        </div>
+    </header>
+{% endif %}

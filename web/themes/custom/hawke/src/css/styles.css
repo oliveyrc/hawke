@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@source "../../templates/**/*.twig"
+@source "../../components/**/*.twig"
+@source "../../hawke.theme"

@@ -1,14 +1,53 @@
 {
   "name": "hawke",
-  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Richard Olivey",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "livereload": "livereload --exclusions node_modules/ --exts 'css,js,twig,theme,apng,avif,gif,jpg,jpeg,jfif,pjpeg,pjp,png,svg,webp'"
-  },
-  "devDependencies": {
-    "livereload": "^0.9.3"
+    "dev": "vite build --watch",
+    "build": "vite build"
   },
   "dependencies": {
+    "anymatch": "^3.1.3",
+    "binary-extensions": "^2.3.0",
+    "braces": "^3.0.3",
+    "chokidar": "^3.6.0",
+    "detect-libc": "^2.1.2",
+    "enhanced-resolve": "^5.18.4",
+    "esbuild": "^0.27.2",
+    "fill-range": "^7.1.1",
+    "glob-parent": "^5.1.2",
+    "graceful-fs": "^4.2.11",
+    "is-binary-path": "^2.1.0",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "is-number": "^7.0.0",
+    "jiti": "^2.6.1",
+    "lightningcss": "^1.30.2",
+    "lightningcss-darwin-arm64": "^1.30.2",
+    "livereload": "^0.9.3",
+    "livereload-js": "^3.4.1",
+    "magic-string": "^0.30.21",
+    "nanoid": "^3.3.11",
+    "normalize-path": "^3.0.0",
+    "opts": "^2.0.2",
+    "picocolors": "^1.1.1",
+    "picomatch": "^2.3.1",
+    "postcss": "^8.5.6",
+    "readdirp": "^3.6.0",
+    "rollup": "^4.55.2",
+    "source-map-js": "^1.2.1",
+    "tapable": "^2.3.0",
+    "tinyglobby": "^0.2.15",
+    "to-regex-range": "^5.0.1",
+    "ws": "^7.5.10"
+  },
+  "devDependencies": {
     "@tailwindcss/vite": "^4.1.18",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.1.18",
+    "vite": "^7.3.1"
   }
 }
