@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  --color-border: #cce;
+  --color-background: #e3eaf9;
+
+}
+
 @source "../../templates/**/*.twig"
 @source "../../components/**/*.twig"
 @source "../../hawke.theme"

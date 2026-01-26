@@ -1,29 +1,39 @@
-{% if page.header or page.primary_menu %}
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-6 py-6 flex items-center justify-between">
-            <div class="md:flex items-center justify-between py-4">
-                {{ page.header }}
-                {{ page.primary_menu }}
-            </div>
-        </div>
-    </header>
+{% if page.header %}
+	<header class=" max-w-200 mx-auto mt-6 mb-6">
+		<div class="bg-background mx-6container mx-6 px-4 py-4 flex items-center justify-between border-solid border border-border border-2 ">
+			<div class="md:flex items-center justify-between py-4">
+				{{ page.header }}
+
+			</div>
+		</div>
+	</header>
 {% endif %}
 
 
+<div class="container mx-auto px-6 max-w-200">
+	{{ page.breadcrumb }}
+	{% if page.highlighted %}
+		<div class="bg-gray-100 py-4">
+			<div class="container mx-auto px-6">
+				{{ page.highlighted }}
+			</div>
+		</div>
+	{% endif %}
 
-<div class="container mx-auto px-6">
-    {{ page.breadcrumb }}
-    {% if page.highlighted %}
-        <div class="bg-gray-100 py-4">
-            <div class="container mx-auto px-6">
-                {{ page.highlighted }}
-            </div>
-        </div>
-    {% endif %}
-
-{#    {% if page.help %}#}
+	{#    {% if page.help %}#}
 {#        <div class="container mx-auto px-6 py-4">#}
-{#            {{ page.help }}#}
-{#        </div>#}
-{#    {% endif %}#}
+	{#            {{ page.help }}#}
+	{#        </div>#}
+	{#    {% endif %}#}
 </div>
+
+{% if page.footer %}
+	<header class=" max-w-200 mx-auto mt-6 mb-6">
+		<div class="bg-background mx-6container mx-6 px-4 py-4 flex items-center justify-between border-solid border border-border border-2 ">
+			<div class="md:flex items-center justify-between py-4">
+				{{ page.footer }}
+
+			</div>
+		</div>
+	</header>
+{% endif %}
