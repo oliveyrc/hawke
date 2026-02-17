@@ -27,3 +27,17 @@ function hawke_preprocess_page(array &$variables): void {
 function hawke_preprocess_node(array &$variables): void {
 
 }
+
+/**
+ * Remove the generator tag.
+ *
+ * @param array $attachments
+ */
+function hawke_page_attachments_alter(array &$attachments): void
+{
+  foreach ($attachments['#attached']['html_head'] as $key => $attachment) {
+    if ($attachment[1] == 'system_meta_generator') {
+      unset($attachments['#attached']['html_head'][$key]);
+    }
+  }
+}
