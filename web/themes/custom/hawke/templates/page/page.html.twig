@@ -11,20 +11,9 @@
 
 
 <div class="container mx-auto px-6 max-w-200">
-	{{ page.breadcrumb }}
-	{% if page.highlighted %}
-		<div class="bg-gray-100 py-4">
-			<div class="container mx-auto px-6">
-				{{ page.highlighted }}
-			</div>
-		</div>
-	{% endif %}
 
-	{#    {% if page.help %}#}
-{#        <div class="container mx-auto px-6 py-4">#}
-	{#            {{ page.help }}#}
-	{#        </div>#}
-	{#    {% endif %}#}
+	{{page.sidebar_first}}
+	{{page.content}}
 </div>
 
 {% if page.footer %}
