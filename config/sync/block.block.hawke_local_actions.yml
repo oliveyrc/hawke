@@ -1,0 +1,20 @@
+uuid: 2abe1739-b293-4dd6-bf0b-549488090d87
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - hawke
+_core:
+  default_config_hash: CdXfDmRgAvms7EQovxxWPdYi0GitxeRbVtScYK16ZH0
+id: hawke_local_actions
+theme: hawke
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

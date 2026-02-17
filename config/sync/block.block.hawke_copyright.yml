@@ -1,0 +1,23 @@
+uuid: 794a7e14-fe95-4e75-af78-a5973411dece
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic_block:505885e6-3cdb-4a8f-949e-5c01912743c5'
+  module:
+    - block_content
+  theme:
+    - hawke
+id: hawke_copyright
+theme: hawke
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:505885e6-3cdb-4a8f-949e-5c01912743c5'
+settings:
+  id: 'block_content:505885e6-3cdb-4a8f-949e-5c01912743c5'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  view_mode: full
+visibility: {  }

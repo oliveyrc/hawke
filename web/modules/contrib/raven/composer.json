@@ -1,0 +1,41 @@
+{
+    "name": "drupal/raven",
+    "description": "Integrates with Sentry application monitoring and error tracking platform (sentry.io).",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/raven",
+    "authors": [
+        {
+            "name": "Mark Burdett (mfb)",
+            "homepage": "https://www.drupal.org/u/mfb",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/raven",
+        "source": "https://git.drupalcode.org/project/raven"
+    },
+    "require": {
+        "sentry/sentry": "^4.12"
+    },
+    "require-dev": {
+        "drupal/csp": "^1.17 || ^2.0",
+        "drupal/monitoring": "^1.13",
+        "drupal/seckit": "^2.0",
+        "drush/drush": "^13.0"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/mfb"
+        },
+        {
+            "type": "ko-fi",
+            "url": "https://ko-fi.com/mfb"
+        },
+        {
+            "type": "patreon",
+            "url": "https://www.patreon.com/mfb"
+        }
+    ]
+}

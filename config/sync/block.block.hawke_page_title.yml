@@ -1,0 +1,20 @@
+uuid: b1c74bb4-c9d6-45ef-a2d6-86d57180bf93
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - hawke
+_core:
+  default_config_hash: fNwDdW063tk_ktzSWzZVeQS9wzvLooVO280BQ9WrsIs
+id: hawke_page_title
+theme: hawke
+region: content
+weight: 1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

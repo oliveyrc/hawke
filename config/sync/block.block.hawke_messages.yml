@@ -1,0 +1,22 @@
+uuid: 33302a6e-7d29-4d1c-8c49-bb0671bd308a
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hawke
+_core:
+  default_config_hash: '-Ac3ISpIT0PQ-whzD7_dw0SdKi6dAbRFNWdSjOiVDqg'
+id: hawke_messages
+theme: hawke
+region: content
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

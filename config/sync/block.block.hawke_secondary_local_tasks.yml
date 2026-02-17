@@ -1,0 +1,22 @@
+uuid: 44c9b92f-24e2-4595-a728-d5a0bc99d419
+langcode: en-gb
+status: true
+dependencies:
+  theme:
+    - hawke
+_core:
+  default_config_hash: 2L0geP-ixCbCkEpW6BVF6H7vDUZN4ea07_Y9CociQm4
+id: hawke_secondary_local_tasks
+theme: hawke
+region: content
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

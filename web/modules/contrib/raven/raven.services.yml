@@ -1,0 +1,38 @@
+services:
+  _defaults:
+    autoconfigure: true
+    autowire: true
+
+  http_client_middleware.raven:
+    class: Drupal\raven\Http\HttpClientMiddleware
+    tags:
+      - { name: http_client_middleware }
+
+  logger.raven:
+    class: Drupal\raven\Logger\Raven
+    tags:
+      - { name: logger }
+
+  raven.csp_subscriber:
+    class: Drupal\raven\EventSubscriber\CspSubscriber
+
+  raven.request_subscriber:
+    class: Drupal\raven\EventSubscriber\RequestSubscriber
+
+  raven.twig_tracing_extension:
+    class: Drupal\raven\Twig\TwigTracingExtension
+    tags:
+      - { name: twig.extension }
+
+  raven.seckit_overrider:
+    class: Drupal\raven\Config\SecKitOverrides
+    tags:
+      - { name: config.factory.override }
+
+  raven.overrider:
+    class: Drupal\raven\Config\Overrides
+    tags:
+      - { name: config.factory.override }
+
+  raven.request_fetcher:
+    class: Drupal\raven\Integration\RequestFetcher

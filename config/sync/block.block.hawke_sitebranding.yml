@@ -1,0 +1,23 @@
+uuid: 2de1a8dd-7b6c-4d07-b261-beee41676f8d
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hawke
+id: hawke_sitebranding
+theme: hawke
+region: header
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

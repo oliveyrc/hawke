@@ -1,0 +1,9 @@
+send javascript errors to sentry:
+  title: 'Send JavaScript errors to Sentry'
+  description: 'JavaScript errors will be captured and sent to Sentry.'
+send performance traces to sentry:
+  title: 'Send performance traces to Sentry'
+  description: 'Request/response performance traces will be captured and sent to Sentry.'
+send logs to sentry:
+  title: 'Send logs to Sentry'
+  description: 'Structured logs will be captured and sent to Sentry.'

@@ -29,6 +29,7 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
         '47e1160838b5e5a10346ac4084b58c23' => __DIR__ . '/..' . '/laravel/prompts/src/helpers.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+        'fb4ca2d97fe7ba6af750497425204e70' => __DIR__ . '/..' . '/sentry/sentry/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -65,6 +66,7 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
             'Symfony\\Component\\Serializer\\' => 29,
             'Symfony\\Component\\Routing\\' => 26,
             'Symfony\\Component\\Process\\' => 26,
+            'Symfony\\Component\\OptionsResolver\\' => 34,
             'Symfony\\Component\\Mime\\' => 23,
             'Symfony\\Component\\Mailer\\' => 25,
             'Symfony\\Component\\HttpKernel\\' => 29,
@@ -76,6 +78,7 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
             'Symfony\\Component\\DependencyInjection\\' => 38,
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Bridge\\PsrHttpMessage\\' => 30,
+            'Sentry\\' => 7,
         ),
         'R' =>
         array (
@@ -102,6 +105,10 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
         array (
             'League\\Container\\' => 17,
             'Laravel\\Prompts\\' => 16,
+        ),
+        'J' =>
+        array (
+            'Jean85\\' => 7,
         ),
         'G' =>
         array (
@@ -246,6 +253,10 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
         array (
             0 => __DIR__ . '/..' . '/symfony/process',
         ),
+        'Symfony\\Component\\OptionsResolver\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/symfony/options-resolver',
+        ),
         'Symfony\\Component\\Mime\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/mime',
@@ -289,6 +300,10 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
         'Symfony\\Bridge\\PsrHttpMessage\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/psr-http-message-bridge',
+        ),
+        'Sentry\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/sentry/sentry/src',
         ),
         'Robo\\' =>
         array (
@@ -346,6 +361,10 @@ class ComposerStaticInit1c94884feafe7e7de67cff6263fe48f2
         'Laravel\\Prompts\\' =>
         array (
             0 => __DIR__ . '/..' . '/laravel/prompts/src',
+        ),
+        'Jean85\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/jean85/pretty-package-versions/src',
         ),
         'GuzzleHttp\\Psr7\\' =>
         array (
